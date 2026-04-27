@@ -1,6 +1,10 @@
 FROM nginx:1.29-alpine
 
+LABEL org.opencontainers.image.source=https://github.com/icco/reliableweb.dev
+LABEL org.opencontainers.image.description="A marketing site for book"
+LABEL org.opencontainers.image.licenses=MIT
+
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-ENV PORT 8080
+ENV PORT=8080
 EXPOSE $PORT
