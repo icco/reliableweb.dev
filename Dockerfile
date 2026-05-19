@@ -1,4 +1,4 @@
-FROM nginx:1.29-alpine
+FROM nginx:1.31-alpine
 
 LABEL org.opencontainers.image.source=https://github.com/icco/reliableweb.dev
 LABEL org.opencontainers.image.description="A marketing site for book"
